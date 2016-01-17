@@ -1,0 +1,20 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": "./src",
+    "target": "ES5",
+    "module": "umd",
+    "sourceMap": true,
+    "jsx": "react",
+    "outDir": "./lib",
+    "removeComments": true
+  },
+  "files": [
+    "typings/tsd.d.ts",
+    "src/Welp.ts",
+    "src/Component.tsx",
+    "src/Dispatcher.ts",
+    "src/Store.ts",
+    "src/test/Component_test.tsx"
+  ]
+}

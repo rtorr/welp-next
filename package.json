@@ -1,0 +1,37 @@
+{
+  "name": "welp-next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/Welp.js",
+  "scripts": {
+    "dev-build": "webpack --watch",
+    "dev-server": " http-server ./examples -p 8080 -s",
+    "example": "webpack --config webpack.example.js --watch",
+    "build": "tsc --declaration",
+    "pretest": "tsc ./test/*_test.tsx --module umd --jsx 'react' && browserify ./test/*_test.js -o ./test/tests.js && echo 'open your browser to http://localhost:8181/test.html'",
+    "test": "http-server ./test -p 8181 -s"
+  },
+  "author": "rtorr <rtorruellas@gmail.com> (http://rtorr.com/)",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "chai": "^3.4.1",
+    "eslint": "^1.10.3",
+    "http-server": "^0.8.5",
+    "mocha": "^2.2.5",
+    "react-addons-test-utils": "^0.14.6",
+    "ts-loader": "^0.7.2",
+    "typescript": "^1.7.5",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "es6-promise": "^3.0.2",
+    "eventemitter3": "^1.1.1",
+    "flux": "^2.1.1",
+    "immutable": "^3.7.6",
+    "object-assign": "^4.0.1",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
+  }
+}
